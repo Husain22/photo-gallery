@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(248, 246, 246);
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(1, 300px);
+  grid-template-rows: repeat(20, 100px);
+  row-gap: 150px;
+  justify-content: center;
+  align-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(5, 100px);
+    column-gap: 10px;
+  }
+}
